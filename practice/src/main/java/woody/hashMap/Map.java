@@ -14,22 +14,20 @@ public interface Map<K, V> {
 
     V get(K key);
 
-    V put(K key, V value);
+    void put(K key, V value);
 
-    V remove(V value);
+    V remove(K key);
 
     void clear();
 
     Set<K> keySet();
-
-    Collection<V> values();
 
     Set<Map.Entry<K, V>> entrySet();
 
     interface Entry<K, V>{
         K getKey();
         V getValue();
-        V setValue();
+        V setValue(V value);
         boolean equals(Object o);
         int hashCode();
     }
