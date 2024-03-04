@@ -13,7 +13,7 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( Integer.numberOfLeadingZeros(13));
+        System.out.println( (24579) ^ (24579 >>> 16));
 
     }
 }
